@@ -1,0 +1,37 @@
+<div class="main">
+  <div class="grid">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</div>
+
+<style>
+  body {
+    background: #62374e;
+  }
+  
+  .main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid {
+    display: grid;
+    height:200px;
+    width: 300px;
+    grid-template-columns: 250px 50px;
+    grid-template-rows: 60px 60px;
+    row-gap: 90px;
+  }
+  
+  .box {
+    background: #fdc57b;
+    width: 50px;
+    height: 50px;
+  }
+</style>
+
