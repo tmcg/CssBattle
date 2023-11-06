@@ -1,0 +1,43 @@
+<div class="main">
+  <div class="tr tr1"></div>
+  <div class="tr tr2"></div>
+  <div class="tr tr3"></div>
+  <div class="tr tr4"></div>
+</div>
+<style>
+  :root {
+    --clr-back: #F2F2B6;
+    --clr-tr1: #FF6D00;
+    --clr-tr2: #FD4602;
+  }
+  html,body {
+    background-color: var(--clr-back);
+  }
+  .tr {
+    width: 0px;
+    height: 0px;
+    position:absolute;
+    border: 75px solid transparent;
+  }
+  .tr1 {
+    top: 85px;
+    left: 80px;
+    border-top: 130px solid var(--clr-tr2);
+  }
+  .tr2 {
+    top: 85px;
+    left: 60px;
+    border-top: 130px solid var(--clr-tr1);
+  }
+  .tr3 {
+    top: 10px;
+    left: 190px;
+    border-bottom: 130px solid var(--clr-tr1);
+  }
+  .tr4 {
+    top: 10px;
+    left: 170px;
+    border-bottom: 130px solid var(--clr-tr2);
+  }
+</style>
+

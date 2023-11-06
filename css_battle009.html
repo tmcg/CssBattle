@@ -1,0 +1,46 @@
+<div class="banner center">
+  <div class="box-outer center">
+    <div class="box-inner center">
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
+<style>
+  :root {
+    --clr-dark: #222730;
+    --clr-light: #393E46;
+    --clr-green: #4CAAB3;
+  }
+  body {
+    background-color: var(--clr-dark);
+    margin: 0 auto;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner {
+    background-color: var(--clr-green);
+    margin-top: 75px;
+    height: 150px;
+  }
+  .box-outer {
+    height: 150px;
+    width: 150px;
+    transform: rotate(45deg);
+    border:50px solid var(--clr-dark);
+  }
+  .box-inner {
+    height: 150px;
+    width: 150px;
+    background-color: var(--clr-green);
+  }
+  .circle {
+    background-color: var(--clr-light);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+</style>
+

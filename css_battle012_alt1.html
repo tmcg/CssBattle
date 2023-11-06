@@ -1,0 +1,72 @@
+<div class="fx-cent">
+  <div class="box">
+  <div class="circle circle1 dark"></div>
+  <div class="circle circle2 dark"></div>
+  <div class="wiggle wiggle1 dark"></div>
+  <div class="wiggle wiggle2 dark"></div>
+  <div class="wiggle wiggle3 dark"></div>
+  </div>
+</div>
+<style>
+  :root {
+    --clr-dark: #D86F45;
+    --clr-light: #F5D6B4;
+  }
+  html,body {
+    background-color: var(--clr-light);
+    margin: 0 auto;
+  }  
+  .fx-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .box {
+    width: 260px;
+    height: 100px;
+    position: relative;
+  }
+  .dark {
+    background-color: var(--clr-dark);
+  }
+  .wiggle {
+    width:60px;
+    height:30px;
+    background-color:transparent;
+    border: 20px solid var(--clr-dark);
+    border-top: 0;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    position:absolute;
+  }
+  .wiggle1 {
+    top: 50px;
+    left: 0px
+  }
+  .wiggle2 {
+    top: 0px;
+    left: 80px;
+    transform: rotate(180deg);
+  }
+  .wiggle3 {
+    top: 50px;
+    left: 160px;
+  }
+
+  .circle {
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    position: absolute;
+    top: 40px;
+  }
+  .circle1 {
+    left: 0px;
+  }
+  .circle2 {
+    left: 240px;
+  }
+</style>

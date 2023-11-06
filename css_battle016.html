@@ -1,0 +1,56 @@
+<div class="main fx-cent">
+  <div class="eye fx-cent">
+    <div class="eye-inner1 fx-cent">
+      <div class="eye-inner2 fx-cent">
+        <div class="eye-inner3">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --clr-dark: #0B2429;
+    --clr-outer: #998235;
+    --clr-inner: #F3AC3C;
+  }
+  html,body {
+    background-color: var(--clr-dark);
+  }
+  .fx-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    height: 100%;
+  }
+  .eye {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: var(--clr-outer);
+    transform: rotate(45deg);
+  }
+  .eye-inner1 {
+    border-radius: 90px;
+    background-color: var(--clr-dark);
+    width: 180px;
+    height: 180px;
+  }
+  .eye-inner2 {
+    border-radius:70px;
+    background-color: var(--clr-inner);
+    width:140px;
+    height:140px;
+  }
+  .eye-inner3 {
+    border-radius: 25px;
+    background-color: var(--clr-dark);
+    width: 50px;
+    height: 50px;
+  }
+</style>
+

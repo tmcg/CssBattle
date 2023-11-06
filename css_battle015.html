@@ -1,0 +1,46 @@
+<div class="main">
+  <div class="circle c1"><div></div></div>
+  <div class="circle c2">
+    <div class="circle c3"></div>
+  </div>
+</div>
+<style>
+  :root {
+    --clr-dark: #09042A;
+    --clr-cleft: #7B3F61;
+    --clr-cright: #E78481;
+    --wx-radius: 75px;
+    --wx-diameter: calc(var(--wx-radius)*2);
+  }
+  html,body {
+    background-color: var(--clr-dark);
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .circle {
+    width: var(--wx-diameter);
+    height: var(--wx-diameter);
+    border-radius: var(--wx-radius);
+    overflow: hidden;
+  }
+  .c1 {
+    background-color: var(--clr-cleft);
+    position: relative;
+    left: 25;
+  }
+  .c2 {
+    background-color: var(--clr-cright);
+    position: relative;
+    left: -25;
+  }
+  .c3 {
+    background-color: var(--clr-dark);
+    position:relative;
+    left: -100px;
+  }
+</style>
+

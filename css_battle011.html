@@ -1,0 +1,57 @@
+<div class="fx-cent">
+  <div class="eye fx-cent">
+    <div class="iris"></div>  
+    <div class="lash lash-left"></div>
+    <div class="lash lash-right"></div>
+  </div>
+</div>
+<style>
+  :root {
+    --clr-dark: #191210;
+    --clr-eye: #ECA03D;
+    --clr-iris: #84271C;
+  }
+  html,body {
+    background-color: var(--clr-dark);
+  }
+  .fx-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .eye {
+    width: 100px;
+    height: 100px;
+    border: 20px solid var(--clr-eye);
+    border-radius: 50%;
+    position: relative;
+  }
+  .iris {
+    width: 50px;
+    height: 50px;
+    background-color: var(--clr-iris);
+    border-radius:50%;
+  }
+  .lash {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    border: 20px solid var(--clr-eye);
+  }
+  .lash-left {
+    top: 50px; right: 100px;
+    border-top: 0;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+  }
+  .lash-right {
+    top: 0px; right: -100px;
+    border-bottom: 0;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+  }
+</style>
+

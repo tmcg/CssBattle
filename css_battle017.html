@@ -1,0 +1,63 @@
+<!-- 99.9% match -->
+<div class="main">
+  <div class="dot dot1"></div>
+  <div class="box dot3"></div>
+  <div class="mid"></div>
+  <div class="box-join"></div>
+  <div class="box dot4"></div>
+  <div class="dot dot2"></div>
+</div>
+<style>
+  :root {
+    --clr-dark: #09042A;
+    --clr-pink: #E78481;
+    --clr-light: #F5BB9C;
+  }
+  html, body {
+    background-color: var(--clr-dark);
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .dot {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10.5px solid var(--clr-dark);
+    background-color: var(--clr-light);
+  }
+  .dot1 {
+    position: absolute;
+    top: 56.5px;
+  }
+  .dot2 {
+    position: absolute;
+    top: 163.5px;
+  }
+  .mid {
+    width: 80px;
+    height: 51px;
+    background-color: var(--clr-pink);
+  }
+  .box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10.5px solid var(--clr-pink);
+    background-color: var(--clr-dark);
+  }
+  .dot3 {
+    position: absolute;
+    left: 100px;
+    top: 110px;
+  }
+  .dot4 {
+    position: absolute;
+    left: 220px;
+    top: 110px;
+  }
+</style>

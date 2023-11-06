@@ -1,0 +1,58 @@
+<div class="main">
+  <div class="col col-short"><div class="circle"><div></div></div></div>
+  <div class="col col-long"><div class="circle"><div></div></div></div>
+  <div class="col col-short"><div class="circle"><div></div></div></div>
+</div>
+
+<style>
+  :root {
+    --clr-purple: #62306D;
+    --clr-yellow: #F7EC7D;
+    --clr-maroon: #AA445F;
+    --clr-orange: #E38F66;
+  }
+  html,body {
+    background-color: var(--clr-purple);
+    margin: 0;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+  }
+  .col {
+    width: 100px;
+    height: 100px;
+    background: var(--clr-yellow);
+  }
+  .col-long {
+    height: 200px;
+  }
+  .col-long .circle {
+    background-color: var(--clr-orange);
+  }
+  .col-long .circle div {
+    background-color: var(--clr-maroon);
+  }
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -50px;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--clr-maroon);
+  }
+  .circle div {
+    width: 60px;
+    height: 60px;
+    border-radius: inherit;
+    background-color: var(--clr-orange);
+  }
+  
+</style>
