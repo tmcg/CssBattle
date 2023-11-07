@@ -1,0 +1,83 @@
+<div class="fx-cent">
+  <div class="ticket-left">
+    <div class="clip clip-outer clip-top clip-left"></div>
+    <div class="clip clip-inner clip-top clip-right"></div>
+    <div class="clip clip-outer clip-bottom clip-left"></div>
+    <div class="clip clip-inner clip-bottom clip-right"></div>
+  </div>
+  <div class="ticket-right">
+    <div class="clip clip-inner clip-top clip-left"></div>
+    <div class="clip clip-outer clip-top clip-right"></div>
+    <div class="clip clip-outer clip-bottom clip-right"></div>
+    <div class="clip clip-inner clip-bottom clip-left"></div>
+  </div>
+</div>
+<style>
+  :root {
+    --clr-dark: #62306D;
+    --clr-ticket-left: #F7EC7D;
+    --clr-ticket-right: #E38F66;
+  }
+  html,body {
+    background-color: var(--clr-dark);
+  }
+  .fx-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .ticket-left {
+    width: 140px;
+    height: 100px;
+    background-color: var(--clr-ticket-left);
+    position: relative;
+  }
+  .ticket-right {
+    width: 60px;
+    height: 100px;
+    background-color: var(--clr-ticket-right);
+    position: relative;
+  }
+  .clip {
+    position: absolute;
+    background-color: var(--clr-dark);
+  }
+  .clip-outer {
+    width: 20px;
+    height: 20px;
+  }
+  .clip-inner {
+    width: 10px;
+    height: 10px;
+  }
+  .clip-top 
+  { 
+    top: 0;
+  }
+  .clip-bottom
+  { 
+    bottom: 0;
+  }
+  .clip-left 
+  {
+    left: 0;
+  }
+  .clip-right
+  {
+    right: 0;
+  }
+  .clip-top.clip-left {
+    border-bottom-right-radius: 100%;
+  }
+  .clip-top.clip-right {
+    border-bottom-left-radius: 100%;
+  }
+  .clip-bottom.clip-left {
+    border-top-right-radius: 100%;
+  }
+  .clip-bottom.clip-right {
+    border-top-left-radius: 100%;
+  }
+</style>
+

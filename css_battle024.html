@@ -1,0 +1,50 @@
+<div class="fx-cent">
+  <div class="tsw tsw1"><div class="tsx tsx1"></div></div>
+  <div class="tsw tsw2"><div class="tsx tsx2"></div></div>
+</div>
+<style>
+  :root {
+    --clr-bg: #62306D;
+    --clr-tb1: #AA445F;
+    --clr-tb2: #E38F66;
+    --clr-tsw: #F7EC7D;
+  }
+  html, body {
+    background: var(--clr-bg);
+  }
+  .fx-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .tsw {
+    margin:20px;
+    width: 100px;
+    height: 150px;
+    border-radius: 50px;
+    position: relative;
+  }
+  .tsw1 {
+    background-color: var(--clr-tb1);
+    top: -25px;
+  }
+  .tsw2 {
+    background-color: var(--clr-tb2);
+    top: 25px;
+  }
+  .tsx {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: var(--clr-tsw);
+    border-radius: 50%;
+    position: absolute;
+  }
+  .tsx1 {
+    bottom: 0px;
+  }
+  .tsx2 {
+    top: 0px;
+  }
+</style>
+

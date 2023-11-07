@@ -1,0 +1,67 @@
+<div class="fx-cent">
+  <div class="main">
+    <div class="a1"></div>
+    <div class="a2"></div>
+    <div class="b1"></div>
+    <div class="b2"></div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --clr-dark: #222;
+    --clr-orange: #F2994A;
+    --clr-blue: #2D9CDB;
+  }
+  html,body {
+    background-color: var(--clr-dark);
+  }
+  .fx-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .main {
+    width: 132px;
+    height: 118px;
+    /*outline: 1px solid green;*/
+    transform: rotate(45deg);
+    position: relative;
+  }
+  .main div {
+    position: absolute;
+  }
+  .a1 {
+    width: 30px;
+    height: 100px;
+    background-color: var(--clr-orange);
+    border-bottom-left-radius: 10px;
+  }
+  .a2 {
+    height: 30px;
+    width: 55px;
+    left: 25px;
+    bottom: 18px;
+    background-color: var(--clr-orange);
+    border-top-right-radius: 5px;
+  }
+  .b1 {
+    width: 30px;
+    height: 100px;
+    right: 2px;
+    bottom: 0px;
+    border-top-right-radius: 10px;
+    background-color: var(--clr-blue);
+  }
+  .b2 {
+    width: 55px;
+    height: 30px;
+    right: 27px;
+    bottom: 70px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--clr-blue);
+  }
+</style>
+
+

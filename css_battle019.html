@@ -1,0 +1,49 @@
+<div class="fx-cent">
+  <div class="cube2"></div>
+  <div class="cube3"></div>
+  <div class="cube1"></div>
+</div>
+<style>
+  :root {
+    --clr-dark: #0B2429;
+    --clr-cube1: #1A4341;
+    --clr-cube2: #998235;
+    --clr-cube3: #F3AC3C;
+  }
+  html,body {
+    background-color: var(--clr-dark);
+  }
+  .fx-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .cube1 {
+    width: 70px;
+    height: 70px;
+    background-color: var(--clr-cube1);
+    position: relative;
+    top: -36px;
+    left: -50px;
+    transform: skew(0deg, 45deg);
+  }
+  .cube2 {
+    width: 70px;
+    height: 70px;
+    background-color: var(--clr-cube2);
+    position: relative;
+    top: -36px;
+    left: 50px;
+    transform: skew(0deg, -45deg);
+  }
+  .cube3 {
+    width: 100px;
+    height: 100px;
+    background: var(--clr-cube3);
+    transform: rotate(45deg);
+    position: relative;
+    top: 35px;
+  }
+</style>
+
