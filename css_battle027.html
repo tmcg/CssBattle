@@ -1,0 +1,64 @@
+<div class="fb-cent">
+  <div class="circle">
+    <div class="box-sp"></div>
+    <div class="box-arc box-arc1">
+      <div class="arc1"></div>
+    </div>
+    <div class="box-arc box-arc2">
+      <div class="arc2"></div>
+    </div>
+    <div class="box-sp"></div>
+  </div>
+</div>
+<style>
+  body {
+    background-color: #E38F66;
+  }
+  .fb-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .circle {
+    background-color: #AA445F;
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .box-sp {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+  }
+  .box-arc {
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .box-arc1 {
+    flex-direction: column;
+  }
+  .arc1 {
+    width: 40px;
+    height: 40px;
+    border: 30px solid #F7EC7D;
+    border-top-right-radius: 100%;
+    border-left: 0;
+    border-bottom: 0;
+  }
+  .arc2 {
+    width: 40px;
+    height: 40px;
+    border: 30px solid #F7EC7D;
+    border-bottom-left-radius: 100%;
+    border-top: 0;
+    border-right: 0;
+  }
+</style>

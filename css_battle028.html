@@ -1,0 +1,50 @@
+<div class="fb-cent">
+  <div class="main">
+    <div class="item c1 b1"></div>
+    <div class="item c2 b2"></div>
+    <div class="item c1 b2"></div>
+    <div class="item c2 b1"></div>
+    <div class="item c2 b3"></div>
+    <div class="item c1 b1"></div>
+    <div class="item c2 b1"></div>
+    <div class="item c1 b3"></div>
+  </div>
+</div>
+<style>
+  html,body {
+    background-color: #1A4341;
+  }
+  .fb-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .main {
+    width: 280px;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+  .c1 {
+    background-color: #998235;
+  }
+  .c2 {
+    background-color: #F3AC3C;
+  }
+  .b1 {
+    border-radius: 50% 50% 50% 50%;
+  }
+  .b2 {
+    border-radius: 50% 50% 0% 0%;
+  }
+  .b3 {
+    border-radius: 0% 0% 50% 50%;
+  }
+
+</style>

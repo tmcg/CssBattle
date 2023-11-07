@@ -1,0 +1,32 @@
+<div class="main">
+  <div class="a clr-1"></div>
+  <div class="b clr-3"></div>
+  <div class="c clr-1"></div>
+  <div class="d clr-2"></div>
+  <div class="e clr-2"></div>
+</div>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .main {
+    aspect-ratio: 1;
+    transform-origin: center;
+    transform: translate(0px, -8px) rotate(45deg);
+    display: grid;
+    grid-template-columns: 75px 50px 75px;
+    grid-template-rows: 75px 50px 75px;
+  }
+  .clr-1 { background: #F3AC3C; }
+  .clr-2 { background: #A3A368; }
+  .clr-3 { background: #FBE18C; }
+  .a { grid-area: 2 / 1; }
+  .b { grid-area: 2 / 2; }
+  .c { grid-area: 2 / 3; }
+  .d { grid-area: 1 / 2; }
+  .e { grid-area: 3 / 2; }
+  
+</style>

@@ -1,0 +1,36 @@
+<div class="corner a"></div>
+<div class="corner b"></div>
+<div class="corner c"></div>
+<div class="corner d"></div>
+<style>
+  :root {
+    --clr-bg: #1A4341;
+    --clr-fg: #F3AC3C;
+    --radius: 100px;
+  }
+  html,body {
+    background-color: var(--clr-bg);
+  }
+  .corner {
+    width: 50%;
+    height: 50%;
+    background-color: var(--clr-fg);
+    position: absolute;
+  }
+  .a {
+    border-bottom-right-radius: var(--radius);
+    inset: 0px auto auto 0px;
+  }
+  .b {
+    border-bottom-left-radius: var(--radius);
+    inset: 0px 0px auto auto;
+  }
+  .c {
+    border-top-right-radius: var(--radius);
+    inset: auto auto 0px 0px;
+  }
+  .d {
+    border-top-left-radius: var(--radius);
+    inset: auto 0px 0px auto;
+  }
+</style>

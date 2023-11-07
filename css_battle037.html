@@ -1,0 +1,40 @@
+<div class="fbc">
+  <div class="fbc">
+    <div class="fbc"></div>
+  </div>
+</div>
+<style>
+  :root {
+    --clr-light: #6592CF;
+    --clr-dark: #243D83;
+  }
+  body {
+    margin: 0;
+    background: var(--clr-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .fbc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 250px;
+    height: 250px;
+    background: var(--clr-dark);
+  }
+  div > div {
+    width: 150px;
+    height: 150px;
+    background: var(--clr-light);
+    transform: rotate(15deg)
+  }
+  div > div > div {
+    width: 75px;
+    height: 75px;
+    background: var(--clr-dark);
+  }
+</style>

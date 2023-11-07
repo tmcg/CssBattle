@@ -1,0 +1,38 @@
+<div class="main">
+  <div class="a"></div>
+  <div class="b"></div>
+</div>
+<style>
+  body {
+    background: #AA445F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .main {
+    position: relative;
+    top: -8px;
+    width: 250px;
+    height: 200px;
+  }
+  .a {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background: #F7EC7D;
+    border-radius: 200px 0% 0% 200px;
+    border-right: 0px;
+  }
+  
+  .b {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 auto;
+    background: #E38F66;
+    border-radius: 0% 200px 200px 0% ;
+  }
+</style>
+
